@@ -39,3 +39,4 @@ if __name__ == "__main__":
 
     text = Path(args.news_file).read_text(encoding="utf-8")
     run(text, args.model, args.out)
+

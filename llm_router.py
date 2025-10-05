@@ -134,5 +134,4 @@ def choose_and_structure(news_text: str, model: str = "o4-mini") -> RoutedConten
         for sec in slide.left.sections + slide.right.sections:
             if not sec.subtitle_bold:
                 raise ValueError("每个 section 必须有 subtitle_bold")
-
     return routed

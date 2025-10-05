@@ -1,0 +1,25 @@
+# 统一风格配置（你可以替换成自己的风格）
+fonts:
+  heading: "Microsoft YaHei"
+  body: "Microsoft YaHei"
+sizes:
+  title_pt: 28       # 标题大小
+  h2_pt: 20
+  body_pt: 14        # 正文字号
+colors:
+  primary: "8B0000"  # 深红色
+  accent: "333333"
+  text: "222222"
+  sub: "666666"
+  bg: "FFFFFF"
+margins:
+  left: 0.6
+  right: 0.6
+  top: 0.6
+  bottom: 0.6
+logo:
+  path: ./examples/cari_logo.png         # 可放你的logo路径，比如 ./examples/logo.png
+  width_inch: 1.0
+background:
+  image: null           # 或者背景图路径
+  color: "FFFFFF"

@@ -1,0 +1,18 @@
+# 控制“展示逻辑”的配置：可加新布局，不动已有代码
+layouts:
+  news_report:
+    enabled: true
+    needs: ["title", "insight", "sections"]
+  timeline:
+    enabled: true
+    min_items: 3
+    max_items: 8
+    needs: ["events"]    # LLM 需要返回的字段
+  summary:
+    enabled: true
+    needs: ["title", "bullets"]
+  image_headline:
+    enabled: true
+    needs: ["title", "hero_image", "caption"]
+  # 以后新增：
+  # comparison_table / quote / kpi_trend / Q&A ...
