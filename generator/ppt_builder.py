@@ -1,4 +1,4 @@
-from pptx import Presentation
+﻿from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
@@ -30,6 +30,8 @@ def load_theme() -> Theme:
 def new_presentation(theme: Theme) -> Presentation:
     prs = Presentation()
     # 背景色/图在 python-pptx 需要逐页设（可在各 layout 中处理）
+    prs.slide_width = Inches(13.333333)
+    prs.slide_height = Inches(7.5)
     return prs
 
 def add_title(prs, theme: Theme, text: str):
